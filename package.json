@@ -14,6 +14,9 @@
     "type": "git",
     "url": "git+https://github.com/dzy321/file-upload.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": [
     "koa",
     "file",
