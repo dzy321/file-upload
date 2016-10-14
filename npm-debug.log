@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.2.2/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.9.5
+3 info using node@v6.2.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/ousakai/Develop/file-upload',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/ousakai/.npm/koa2-file-upload/0.1.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/ousakai/.npm correctMkdir not in flight; initializing
+10 info lifecycle koa2-file-upload@0.1.0~prepublish: koa2-file-upload@0.1.0
+11 silly lifecycle koa2-file-upload@0.1.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/ousakai/.npm/koa2-file-upload/0.1.0/package.tgz',
+12 verbose tar pack   '/Users/ousakai/Develop/file-upload' ]
+13 verbose tarball /Users/ousakai/.npm/koa2-file-upload/0.1.0/package.tgz
+14 verbose folder /Users/ousakai/Develop/file-upload
+15 verbose addLocalTarball adding from inside cache /Users/ousakai/.npm/koa2-file-upload/0.1.0/package.tgz
+16 verbose correctMkdir /Users/ousakai/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd koa2-file-upload@0.1.0
+18 verbose afterAdd /Users/ousakai/.npm/koa2-file-upload/0.1.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/ousakai/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/ousakai/.npm/koa2-file-upload/0.1.0/package/package.json written
+21 silly publish { name: 'koa2-file-upload',
+21 silly publish   version: '0.1.0',
+21 silly publish   description: 'koa middleware use upload file',
+21 silly publish   main: 'dist/index.js',
+21 silly publish   files: [ 'dist' ],
+21 silly publish   scripts:
+21 silly publish    { build: 'babel lib --out-dir dist',
+21 silly publish      test: 'babel-node test.js' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/dzy321/file-upload.git' },
+21 silly publish   publishConfig: { registry: 'https://registry.npmjs.org/' },
+21 silly publish   keywords: [ 'koa', 'file', 'upload', 'oss' ],
+21 silly publish   author: { name: 'wy' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/dzy321/file-upload/issues' },
+21 silly publish   homepage: 'https://github.com/dzy321/file-upload#readme',
+21 silly publish   dependencies:
+21 silly publish    { 'ali-oss': '^4.5.0',
+21 silly publish      'async-busboy': '^0.3.2',
+21 silly publish      dateformat: '^1.0.12',
+21 silly publish      'koa-mount': '^2.0.0',
+21 silly publish      mkdirp: '^0.5.1',
+21 silly publish      uuid: '^2.0.3' },
+21 silly publish   devDependencies:
+21 silly publish    { koa: '^2.0.0',
+21 silly publish      'babel-cli': '^6.16.0',
+21 silly publish      'babel-plugin-transform-async-to-generator': '^6.16.0' },
+21 silly publish   readme: '# koa2-image-upload\n\nkoa2 middle to upload file\n\n### Features\n\n- support upload to dir\n\n```javascript\noptions[\'upload\'] = {\n  "url": \'/api/upload\',\n  "mimetypes": [\'image/png\',\'image/bmp\'], // 如果没有配置,将不进行类型检查 https://www.sitepoint.com/web-foundations/mime-types-complete-list/\n  "folder": "public",\n  "urlPath": "images"\n}\n```\n\n- support upload to oss\n\n```javascript\noptions["upload"] = {\n  "url": \'/api/upload\',\n  "mimetypes": [\'image/png\',\'image/bmp\'],\n  "accessKeyId": "key",\n  "accessKeySecret": "secret",\n  "bucket": "terminus-designer",\n  "region": "oss-cn-hangzhou"\n}\n```\n\n### How to use\n\n```javascript\napp.use(uploader(options))\n```\n\n### Requirements\n\n- Node v6.0+\n\n## Workflow\n\n- `npm install`',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '113ba8b3084ef072b36dda35a1b2118eaa53ef77',
+21 silly publish   _id: 'koa2-file-upload@0.1.0',
+21 silly publish   _shasum: '813b980bd7dd455508e5660f73647bf0ad35c566',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig { registry: 'https://registry.npmjs.org/' }
+23 silly mapToRegistry name koa2-file-upload
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'koa2-file-upload',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'koa2-file-upload',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/koa2-file-upload
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/ousakai/.npm/koa2-file-upload/0.1.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/koa2-file-upload
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 15:19:21
+33 verbose request using bearer token for auth
+34 verbose request id 34c7127358db8051
+35 http request PUT https://registry.npmjs.org/koa2-file-upload
+36 http 403 https://registry.npmjs.org/koa2-file-upload
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Fri, 14 Oct 2016 07:19:24 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lcy1129-LCY',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1476429564.135978,VS0,VE818',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/ousakai/.npm/registry.npmjs.org/koa2-file-upload on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.1.0." : koa2-file-upload
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid koa2-file-upload
+43 verbose cwd /Users/ousakai/Develop/file-upload
+44 error Darwin 15.6.0
+45 error argv "/usr/local/Cellar/node/6.2.2/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.2.2
+47 error npm  v3.9.5
+48 error code E403
+49 error "You cannot publish over the previously published version 0.1.0." : koa2-file-upload
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
