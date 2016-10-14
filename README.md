@@ -9,7 +9,8 @@ koa2 middle to upload file
 ```javascript
 options['upload'] = {
   "url": '/api/upload',
-  "mimetypes": ['image/png','image/bmp'], // 如果没有配置,将不进行类型检查 https://www.sitepoint.com/web-foundations/mime-types-complete-list/
+  "provider": "local",
+  "mimetypes": ['image/png','image/bmp'], // 如果没有配置,将不进行类型检查 http://www.freeformatter.com/mime-types-list.html
   "folder": "public",
   "urlPath": "images"
 }
@@ -20,6 +21,7 @@ options['upload'] = {
 ```javascript
 options["upload"] = {
   "url": '/api/upload',
+  "provider": "oss",
   "mimetypes": ['image/png','image/bmp'],
   "accessKeyId": "key",
   "accessKeySecret": "secret",
