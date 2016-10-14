@@ -1,0 +1,42 @@
+{
+  "name": "koa2-file-upload",
+  "version": "0.1.0",
+  "description": "koa middleware use upload file",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "babel lib --out-dir dist",
+    "test": "babel-node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzy321/file-upload.git"
+  },
+  "keywords": [
+    "koa",
+    "file",
+    "upload",
+    "oss"
+  ],
+  "author": "wy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dzy321/file-upload/issues"
+  },
+  "homepage": "https://github.com/dzy321/file-upload#readme",
+  "dependencies": {
+    "ali-oss": "^4.5.0",
+    "async-busboy": "^0.3.2",
+    "dateformat": "^1.0.12",
+    "koa-mount": "^2.0.0",
+    "mkdirp": "^0.5.1",
+    "uuid": "^2.0.3"
+  },
+  "devDependencies": {
+    "koa": "^2.0.0",
+    "babel-cli": "^6.16.0",
+    "babel-plugin-transform-async-to-generator": "^6.16.0"
+  }
+}
