@@ -1,6 +1,6 @@
 {
   "name": "koa2-file-upload",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "koa middleware use upload file",
   "main": "dist/index.js",
   "files": [
@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "babel lib --out-dir dist",
+    "prepublish": "npm run build",
     "test": "babel-node test.js"
   },
   "repository": {
