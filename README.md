@@ -26,7 +26,8 @@ options["upload"] = {
   "accessKeyId": "key",
   "accessKeySecret": "secret",
   "bucket": "terminus-designer",
-  "region": "oss-cn-hangzhou"
+  "region": "oss-cn-hangzhou",
+  "targetProtocol": "http" // default null
 }
 ```
 
