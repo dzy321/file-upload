@@ -27,7 +27,8 @@ options["upload"] = {
   "accessKeySecret": "secret",
   "bucket": "terminus-designer",
   "region": "oss-cn-hangzhou",
-  "targetProtocol": "http" // default null
+  "targetProtocol": "http", // default null
+  "attachment": true // default null
 }
 ```
 
