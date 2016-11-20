@@ -32,6 +32,20 @@ options["upload"] = {
 }
 ```
 
+- support upload to cos
+
+```javascript
+options["upload"] = {
+  "url": '/api/upload',
+  "provider": "cos",
+  "bucket": "b2b",
+  "appId": "xxx",
+  "secretID": "xxx",
+  "secretKey": "xx",
+  "region": "gz"
+}
+```
+
 ### How to use
 
 ```javascript
