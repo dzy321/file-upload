@@ -1,6 +1,6 @@
 {
   "name": "koa2-file-upload",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "koa middleware use upload file",
   "main": "dist/index.js",
   "files": [
@@ -36,6 +36,7 @@
     "dateformat": "^1.0.12",
     "koa-mount": "^2.0.0",
     "mkdirp": "^0.5.1",
+    "qcloud_cos_v4": "^1.0.4",
     "uuid": "^2.0.3"
   },
   "devDependencies": {

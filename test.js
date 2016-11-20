@@ -8,15 +8,21 @@ const app = new Koa()
 
 const options = {
   "url": "/api/upload",
-  "mimetypes": ['image/png','image/bmp'],
-  "provider": "local",
-  "folder": "public",
-  "urlPath": "images"
+  // "mimetypes": ['image/png','image/bmp'],
+  // "provider": "local",
+  // "folder": "public",
+  // "urlPath": "images"
   // "provider": "oss",
   // "accessKeyId": "xxxxx",
   // "accessKeySecret": "xxxx",
   // "bucket": "xxxx",
   // "region": "oss-cn-hangzhou"
+  "provider": "cos",
+  "bucket": "b2b",
+  "appId": "xxx",
+  "secretID": "xxx",
+  "secretKey": "xx",
+  "region": "gz"
 }
 
 app.use(mount('/upload', async (ctx) => {
