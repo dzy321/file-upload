@@ -2,11 +2,13 @@ const Koa = require("koa")
 
 const uploader = require("./lib")
 
+const config = require('./config')
+
 const mount = require("koa-mount")
 
 const app = new Koa()
 
-const options = {
+const options = Object.assign({
   "url": "/api/upload",
   // "mimetypes": ['image/png','image/bmp'],
   // "provider": "local",
@@ -17,13 +19,13 @@ const options = {
   // "accessKeySecret": "xxxx",
   // "bucket": "xxxx",
   // "region": "oss-cn-hangzhou"
-  "provider": "cos",
-  "bucket": "b2b",
-  "appId": "xxx",
-  "secretID": "xxx",
-  "secretKey": "xx",
-  "region": "gz"
-}
+  // "provider": "cos",
+  // "bucket": "b2b",
+  // "appId": "xxx",
+  // "secretID": "xxx",
+  // "secretKey": "xx",
+  // "region": "gz"
+}, config)
 
 app.use(mount('/upload', async (ctx) => {
   ctx.body = `
