@@ -10,6 +10,7 @@ const app = new Koa()
 
 const options = Object.assign({
   "url": "/api/upload",
+  "storeDir": "terminus"
   // "mimetypes": ['image/png','image/bmp'],
   // "provider": "local",
   // "folder": "public",

@@ -9,6 +9,7 @@ koa2 middle to upload file
 ```javascript
 options['upload'] = {
   "url": '/api/upload',
+  "storeDir": 'xxx',
   "provider": "local",
   "mimetypes": ['image/png','image/bmp'], // 如果没有配置,将不进行类型检查 http://www.freeformatter.com/mime-types-list.html
   "folder": "public",
@@ -22,6 +23,7 @@ options['upload'] = {
 options["upload"] = {
   "url": '/api/upload',
   "provider": "oss",
+  "storeDir": 'xxx',
   "mimetypes": ['image/png','image/bmp'],
   "accessKeyId": "key",
   "accessKeySecret": "secret",
@@ -38,6 +40,7 @@ options["upload"] = {
 options["upload"] = {
   "url": '/api/upload',
   "provider": "cos",
+  "storeDir": 'xxx',
   "bucket": "b2b",
   "appId": "xxx",
   "secretID": "xxx",
