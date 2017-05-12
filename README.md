@@ -1,6 +1,6 @@
 # koa2-image-upload
 
-koa2 middle to upload file
+koa2 middle to upload file, 支持文件系统、 阿里 oss 、腾讯 cos 、华为 obs
 
 ### Features
 
@@ -49,6 +49,20 @@ options["upload"] = {
   "region": "gz"
 }
 ```
+
+- support upload to obs
+
+```javascript
+options["upload"] = {
+  "url": '/api/upload',
+  "provider": "obs",
+  "bucket": "****",
+  "accessKeyId": "****",
+  "accessKeySecret": "****",
+  "server": "****"
+}
+```
+
 
 ### How to use
 
