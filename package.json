@@ -24,7 +24,8 @@
     "upload",
     "oss",
     "cos",
-    "obs"
+    "obs",
+    "azure"
   ],
   "author": "wy",
   "license": "ISC",
@@ -35,6 +36,7 @@
   "dependencies": {
     "ali-oss": "^4.5.0",
     "async-busboy": "^0.3.2",
+    "azure-storage": "^2.1.0",
     "dateformat": "^1.0.12",
     "koa-mount": "^2.0.0",
     "mkdirp": "^0.5.1",
