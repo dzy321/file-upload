@@ -1,5 +1,9 @@
 # Change log
 
+## 0.1.19
+
+- 删除 field parse
+
 ## 0.1.18
 
 - 支持上传到 azure
