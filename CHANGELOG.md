@@ -1,5 +1,9 @@
 # Change log
 
+# 0.1.20
+
+- 解决了 ext mimetype 大小写不匹配的问题
+
 ## 0.1.19
 
 - 删除 field parse
