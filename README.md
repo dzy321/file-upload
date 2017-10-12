@@ -1,4 +1,4 @@
-# koa2-image-upload
+# koa2-file-upload
 
 koa2 middle to upload file, 支持文件系统、 阿里 oss 、腾讯 cos 、华为 obs 、azure
 
