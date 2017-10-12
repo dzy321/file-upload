@@ -79,6 +79,9 @@ options["upload"] = {
 ### How to use
 
 ```javascript
+
+npm i koa2-file-upload
+
 app.use(uploader(options))
 ```
 
