@@ -1,6 +1,6 @@
 # koa2-file-upload
 
-![](https://img.shields.io/npm/v/koa2-file-upload.svg?style=flat)
+[![](https://img.shields.io/npm/v/koa2-file-upload.svg?style=flat)](https://www.npmjs.com/package/koa2-file-upload)
 
 koa2 middle to upload file, 支持文件系统、 阿里 oss 、腾讯 cos 、华为 obs 、azure
 
