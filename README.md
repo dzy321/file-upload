@@ -77,6 +77,19 @@ options["upload"] = {
 }
 ```
 
+- support upload to aws
+
+```javascript
+options["upload"] = {
+  "url": '/api/upload',
+  "provider": "aws", 
+  "bucket": "****",
+  "accessKey": "****",
+  "secretKey": "****",
+  "secure": true,
+}
+```
+
 
 ### How to use
 
