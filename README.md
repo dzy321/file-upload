@@ -85,8 +85,7 @@ options["upload"] = {
   "provider": "aws", 
   "bucket": "****",
   "accessKey": "****",
-  "secretKey": "****",
-  "secure": true,
+  "secretKey": "****"
 }
 ```
 
