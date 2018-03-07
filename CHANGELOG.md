@@ -1,5 +1,9 @@
 # Change log
 
+# 0.1.23
+
+- 支持上传 aws
+
 # 0.1.22
 
 - 解决了 response 乱码的问题
