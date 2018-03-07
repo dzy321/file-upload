@@ -2,7 +2,7 @@ const Koa = require("koa")
 
 const uploader = require("./lib")
 
-const config = require('./config')
+//const config = require('./config')
 
 const mount = require("koa-mount")
 
@@ -10,7 +10,7 @@ const app = new Koa()
 
 const options = Object.assign({
   "url": "/api/upload",
-  "storeDir": "terminus"
+  "storeDir": "terminus",
   // "mimetypes": ['image/png','image/bmp'],
   // "provider": "local",
   // "folder": "public",
@@ -26,7 +26,12 @@ const options = Object.assign({
   // "secretID": "xxx",
   // "secretKey": "xx",
   // "region": "gz"
-}, config)
+  "provider": "aws",  
+  "bucket": "my.unique.bucket.name",
+  "accessKeyId": "miniokey",
+  "secretAccessKey": "miniosecret",
+  "endpoint": "http://minio.app.yougole.com.cn:801"
+})
 
 app.use(mount('/upload', async (ctx) => {
   ctx.body = `
