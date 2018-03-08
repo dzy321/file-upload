@@ -86,7 +86,9 @@ options["upload"] = {
   "provider": "aws", 
   "bucket": "****",
   "accessKeyId": "****",
-  "secretAccessKey": "****"
+  "secretAccessKey": "****",
+  "s3ForcePathStyle": true, // needed with minio?
+  "signatureVersion": "v4"
 }
 ```
 
