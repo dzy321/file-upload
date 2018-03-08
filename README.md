@@ -82,6 +82,7 @@ options["upload"] = {
 ```javascript
 options["upload"] = {
   "url": '/api/upload',
+  "endpoint": "http://localhost:801",
   "provider": "aws", 
   "bucket": "****",
   "accessKey": "****",
