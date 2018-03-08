@@ -85,8 +85,8 @@ options["upload"] = {
   "endpoint": "http://localhost:801",
   "provider": "aws", 
   "bucket": "****",
-  "accessKey": "****",
-  "secretKey": "****"
+  "accessKeyId": "****",
+  "secretAccessKey": "****"
 }
 ```
 
