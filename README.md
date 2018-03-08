@@ -87,8 +87,8 @@ options["upload"] = {
   "bucket": "****",
   "accessKeyId": "****",
   "secretAccessKey": "****",
-  "s3ForcePathStyle": true, // needed with minio?
-  "signatureVersion": "v4"
+  "s3ForcePathStyle": true, // minio support
+  "signatureVersion": "v4" // minio support
 }
 ```
 
