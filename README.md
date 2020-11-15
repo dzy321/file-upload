@@ -15,7 +15,7 @@ options['upload'] = {
   "provider": "local",
   "mimetypes": ['image/png','image/bmp'], // 如果没有配置,将不进行类型检查 http://www.freeformatter.com/mime-types-list.html
   "folder": "public",
-  "urlPath": "images"
+  "urlPath": "images",
 }
 ```
 
