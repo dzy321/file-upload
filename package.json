@@ -1,6 +1,6 @@
 {
   "name": "koa2-file-upload",
-  "version": "0.1.26",
+  "version": "0.1.27-nie",
   "description": "koa middleware use upload file",
   "main": "dist/index.js",
   "files": [
@@ -46,8 +46,8 @@
     "uuid": "^2.0.3"
   },
   "devDependencies": {
-    "koa": "^2.0.0",
     "babel-cli": "^6.16.0",
-    "babel-plugin-transform-async-to-generator": "^6.16.0"
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "koa": "^2.0.0"
   }
 }
