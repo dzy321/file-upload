@@ -33,7 +33,7 @@
   "dependencies": {
     "ali-oss": "^4.5.0",
     "async-busboy": "^0.3.2",
-    "cos-nodejs-sdk-v5": "^1.0.0",
+    "cos-nodejs-sdk-v5": "^2.9.21",
     "dateformat": "^1.0.12",
     "koa-mount": "^2.0.0",
     "mkdirp": "^0.5.1",
