@@ -1,7 +1,7 @@
 {
-  "name": "koa2-file-upload",
-  "version": "0.1.15",
-  "description": "koa middleware use upload file",
+  "name": "@kirin/koa2-file-upload",
+  "version": "0.1.17-alpha.0",
+  "description": "koa middleware use upload file/ fork to https://github.com/dzy321/file-upload#readme",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -16,7 +16,7 @@
     "url": "git+https://github.com/dzy321/file-upload.git"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "http://npm.geega.com/"
   },
   "keywords": [
     "koa",
@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/dzy321/file-upload/issues"
   },
-  "homepage": "https://github.com/dzy321/file-upload#readme",
+  "homepage": "",
   "dependencies": {
     "ali-oss": "^4.5.0",
     "async-busboy": "^0.3.2",
@@ -40,8 +40,8 @@
     "uuid": "^2.0.3"
   },
   "devDependencies": {
-    "koa": "^2.0.0",
     "babel-cli": "^6.16.0",
-    "babel-plugin-transform-async-to-generator": "^6.16.0"
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "koa": "^2.0.0"
   }
 }
