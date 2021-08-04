@@ -1,6 +1,8 @@
-# koa2-image-upload
+# koa2-file-upload
 
-koa2 middle to upload file
+[![](https://img.shields.io/npm/v/koa2-file-upload.svg?style=flat)](https://www.npmjs.com/package/koa2-file-upload)
+
+koa2 middle to upload file, 支持文件系统、 阿里 oss 、腾讯 cos 、华为 obs 、azure
 
 ### Features
 
@@ -13,7 +15,7 @@ options['upload'] = {
   "provider": "local",
   "mimetypes": ['image/png','image/bmp'], // 如果没有配置,将不进行类型检查 http://www.freeformatter.com/mime-types-list.html
   "folder": "public",
-  "urlPath": "images"
+  "urlPath": "images",
 }
 ```
 
@@ -50,9 +52,53 @@ options["upload"] = {
 }
 ```
 
+- support upload to obs
+
+```javascript
+options["upload"] = {
+  "url": '/api/upload',
+  "provider": "obs",
+  "bucket": "****",
+  "accessKeyId": "****",
+  "accessKeySecret": "****",
+  "server": "****"
+}
+```
+
+- support upload to azure
+
+```javascript
+options["upload"] = {
+  "url": '/api/upload',
+  "provider": "azure", 
+  "container": "xxxx",
+  "account": "xxxx",
+  "connectionString": "xxxx",
+}
+```
+
+- support upload to aws
+
+```javascript
+options["upload"] = {
+  "url": '/api/upload',
+  "endpoint": "http://localhost:801",
+  "provider": "aws", 
+  "bucket": "****",
+  "accessKeyId": "****",
+  "secretAccessKey": "****",
+  "s3ForcePathStyle": true, // minio support
+  "signatureVersion": "v4" // minio support
+}
+```
+
+
 ### How to use
 
 ```javascript
+
+npm i koa2-file-upload
+
 app.use(uploader(options))
 ```
 

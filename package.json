@@ -1,7 +1,7 @@
 {
-  "name": "@kirin/koa2-file-upload",
-  "version": "0.1.17-alpha.0",
-  "description": "koa middleware use upload file/ fork to https://github.com/dzy321/file-upload#readme",
+  "name": "koa2-file-upload",
+  "version": "0.1.26",
+  "description": "koa middleware use upload file",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -16,13 +16,16 @@
     "url": "git+https://github.com/dzy321/file-upload.git"
   },
   "publishConfig": {
-    "registry": "http://npm.geega.com/"
+    "registry": "https://www.npmjs.com/"
   },
   "keywords": [
     "koa",
     "file",
     "upload",
-    "oss"
+    "oss",
+    "cos",
+    "obs",
+    "azure"
   ],
   "author": "wy",
   "license": "ISC",
@@ -34,9 +37,13 @@
     "ali-oss": "^4.5.0",
     "async-busboy": "^0.3.2",
     "cos-nodejs-sdk-v5": "^2.9.21",
+    "aws-sdk": "^2.205.0",
+    "azure-storage": "2.6.0",
+    "busboy-file-parser": "^0.6.1",
     "dateformat": "^1.0.12",
     "koa-mount": "^2.0.0",
     "mkdirp": "^0.5.1",
+    "obs-sdk": "^0.1.0",
     "uuid": "^2.0.3"
   },
   "devDependencies": {
