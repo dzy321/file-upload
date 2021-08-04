@@ -9,8 +9,8 @@ const mount = require("koa-mount")
 const app = new Koa()
 
 const options = Object.assign({
-  "url": "/api/upload",
-  "storeDir": "terminus",
+  // "url": "/api/upload",
+  // "storeDir": "terminus"
   // "mimetypes": ['image/png','image/bmp'],
   // "provider": "local",
   // "folder": "public",
@@ -27,6 +27,7 @@ const options = Object.assign({
   // "secretKey": "xx",
   // "region": "gz"
 }, config)
+console.log(options)
 
 app.use(mount('/upload', async (ctx) => {
   ctx.body = `
@@ -40,7 +41,7 @@ app.use(mount('/upload', async (ctx) => {
       <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-    <form method="POST" action="/api/upload" enctype="multipart/form-data">
+    <form method="POST" action="${options.url}" enctype="multipart/form-data">
       <input type="file" multiple name="file" />
       <br />
       <input type="submit" value="submit"/>
